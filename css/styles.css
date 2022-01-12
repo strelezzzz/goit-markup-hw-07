@@ -171,8 +171,8 @@ a {
   margin-bottom: 94px;
 }
 
-.about .item + .item {
-  margin-left: 30px;
+.about__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ========== what-we-do Flex========= */
@@ -183,16 +183,16 @@ a {
   position: relative;
 }
 
-.what-we-do-list .item img {
+.what-we-do-list__img {
   background-color: rgba(47, 48, 58, 0.8);
   height: 100%;
 }
 
-.what-we-do-list .item + .item {
-  margin-left: 30px;
+.what-we-do-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.description {
+.what-we-do-list__text {
   display: block;
   position: absolute;
   bottom: 0;
@@ -213,14 +213,14 @@ a {
 
 /* ========= team  Flex=========== */
 
-.what-we-do .title,
+.what-we-do__title,
 .clients .title,
-.team .title {
+.team__title {
   padding-bottom: 50px;
   padding-top: 94px;
 }
 
-.what-we-do .title {
+.what-we-do__title {
   padding-top: 85px;
 }
 
@@ -229,11 +229,11 @@ a {
   padding-bottom: 94px;
 }
 
-.team-list .item + .item {
-  margin-left: 30px;
+.team-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.team-list .item h3 {
+.team-cards__title {
   padding-top: 30px;
   padding-bottom: 10px;
   margin: 0;
@@ -243,7 +243,7 @@ a {
   background-color: var(--bacground-button);
 }
 
-.team p {
+.team-cards__text {
   padding-bottom: 16px;
 }
 
@@ -481,12 +481,12 @@ a {
 
 /* ======== Studio ================== */
 
-.about p,
-.team p {
+.about__text,
+.team-cards__text {
   color: var(--secondary-text);
 }
 
-.about h3,
+.about__title,
 .social h3,
 .email-label {
   display: block;
@@ -496,7 +496,7 @@ a {
   margin-top: 0;
 }
 
-.about h3 {
+.about__title {
   margin-bottom: 10px;
 }
 
@@ -518,7 +518,7 @@ a {
   background-size: cover;
 }
 
-.hero h1 {
+.hero__title {
   width: 696px;
   display: block;
   margin-bottom: 30px;
@@ -535,8 +535,8 @@ a {
   color: var(--background);
 }
 
-.what-we-do .title,
-.team .title,
+.what-we-do__title,
+.team__title,
 .clients .title {
   font-weight: bold;
   font-size: 36px;
@@ -544,14 +544,14 @@ a {
   text-align: center;
 }
 
-.team h3,
-.team p {
+.team-cards__title,
+.team-cards__text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 
-.team h3 {
+.team-cards__text {
   font-weight: 500;
 }
 /* ================ icons ============== */
@@ -574,7 +574,7 @@ a {
   align-items: center;
 }
 
-.about-icon {
+.about__icon {
   width: 270px;
   height: 120px;
   background-color: var(--bacground-button);
@@ -585,7 +585,7 @@ a {
 
 /* ================ social-links ============== */
 
-.social-links {
+.social-list {
   display: flex;
   padding-bottom: 30px;
   margin-right: 32px;
@@ -593,15 +593,15 @@ a {
   justify-content: center;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   fill: var(--background);
   background-color: var(--color-active);
   border-radius: 50%;
   border: 1px solid transparent;
 }
 
-.social-link {
+.social-list__link {
   display: flex;
   width: 44px;
   height: 44px;
