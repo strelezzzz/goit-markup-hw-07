@@ -320,7 +320,7 @@ a {
 }
 
 /* ======= Footer =============================== */
-.footer .container {
+.footer__conteiner {
   display: flex;
   align-items: baseline;
 }
@@ -371,24 +371,23 @@ a {
   margin-bottom: 100px;
   /* outline: #afb1b8 solid 2px; */
 }
-.social .social-item {
+/* .social-list__item--footer {
   padding-right: 0;
   padding-left: 0;
-}
+} */
 
-.social h3 {
+.social__title {
   font-size: 14px;
   margin-bottom: 18px;
   color: var(--background);
 }
 
-.footer .social-links {
-  margin-right: 0;
+.social-list.footer__social-list {
   margin-left: 0;
   padding: 0;
 }
 
-.footer .social-link {
+/* .social-list__link--footer {
   display: flex;
   width: 44px;
   height: 44px;
@@ -398,7 +397,7 @@ a {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   padding-bottom: 0;
-}
+} */
 
 /* ========== Filters ======================= */
 
@@ -432,8 +431,7 @@ a {
   border-color: transparent;
 }
 
-.hero .buttons {
-  display: inline-block;
+.hero-button {
   margin-bottom: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -487,8 +485,8 @@ a {
 }
 
 .about__title,
-.social h3,
-.email-label {
+.social__title,
+.email__label {
   display: block;
   font-weight: bold;
   line-height: 1.14;
@@ -880,13 +878,13 @@ a {
 }
 /* ========== Forms ======= */
 
-.email-label {
+.email__label {
   color: var(--background);
   margin-bottom: 20px;
   font-size: 14px;
 }
 
-.email-icon {
+.email-button__icon {
   fill: var(--background);
 }
 
@@ -917,11 +915,11 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email-button > span {
+.email-button__label {
   margin-right: 10px;
 }
 
-.email-input {
+.email__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -936,7 +934,7 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.email-input:focus {
+.email__input:focus {
   outline: none;
 }
 
