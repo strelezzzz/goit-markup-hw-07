@@ -744,8 +744,8 @@ a {
   cursor: pointer;
 }
 
-.icon-close,
-.icon-check {
+.close-button__icon,
+.checkbox-policy__icon {
   display: block;
   fill: var(--color-logo);
 }
@@ -770,24 +770,24 @@ a {
   margin-bottom: 12px;
 }
 
-.form-fild,
-.comment-fild,
-.policy-fild {
+.form-field,
+.comment-field,
+.policy-field {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-bottom: 10px;
 }
 
-.comment-fild {
+.comment-field {
   margin-bottom: 20px;
 }
 
-.policy-fild {
+.policy-field {
   margin-bottom: 30px;
 }
 
-.form-label {
+.form-field__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.166;
@@ -807,12 +807,12 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-fild:focus-within .icon-form {
+.form-field:focus-within .icon-form {
   fill: var(--color-active);
 }
 
-.comment-input,
-.modal-input {
+.comment-field__input,
+.form-field__input {
   display: block;
 
   font-size: 14px;
@@ -830,30 +830,30 @@ a {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input {
+.form-field__input {
   padding-left: 42px;
   max-height: 40px;
 }
 
-.comment-input {
+.comment-field__input {
   resize: none;
   height: 120px;
 }
 
-.modal-input:focus,
-.comment-input:focus {
+.form-field__input:focus,
+.comment-field__input:focus {
   outline-color: 1px solid var(--color-active);
   border: 1px solid var(--color-active);
 }
 
-.policy-label {
+.policy-field__label {
   position: relative;
   padding-left: 36px;
   color: var(--secondary-text);
   cursor: pointer;
 }
 
-.policy-link {
+.policy-field__link {
   color: var(--color-active);
   text-decoration: underline;
 }
@@ -878,17 +878,17 @@ a {
   outline: none;
 }
 
-.policy-custom:checked ~ .checkbox-policy {
+.policy-field__input--custom:checked ~ .checkbox-policy {
   background-color: var(--color-active);
   background-origin: border-box;
   border-color: var(--color-active);
 }
 
-.policy-custom:focus ~ .checkbox-policy {
+.policy-field__input--custom:focus ~ .checkbox-policy {
   border: 2px solid var(--color-active);
 }
 
-.policy-hidden {
+.policy-field__input {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
