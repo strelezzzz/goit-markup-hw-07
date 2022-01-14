@@ -7,6 +7,18 @@
   padding: 0;
   /* margin-right: 15px; */
   margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__icon-envelope,
+  &__icon-smartphone {
+    display: inline-block;
+    margin-right: 10px;
+    fill: var(--secondary-text);
+    align-items: center;
+  }
 }
 
 .contacts-list__link {
@@ -21,25 +33,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contacts-list__link:hover,
-.contacts-list__link:focus {
-  color: var(--color-active);
-}
-
-.contacts-list__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-/* ================ icons ============== */
-
-.contacts-list__icon-envelope,
-.contacts-list__icon-smartphone {
-  display: inline-block;
-  margin-right: 10px;
-  fill: var(--secondary-text);
-  align-items: center;
+  &:hover,
+  &:focus {
+    color: var(--color-active);
+  }
 }
 
 .contacts-list__link:hover .contacts-list__icon-envelope,

@@ -8,14 +8,6 @@
   margin-left: 32px;
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
-  fill: var(--background);
-  background-color: var(--color-active);
-  border-radius: 50%;
-  border: 1px solid transparent;
-}
-
 .social-list__link {
   display: flex;
   width: 44px;
@@ -29,4 +21,12 @@
   transition-property: fill, background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--background);
+    background-color: var(--color-active);
+    border-radius: 50%;
+    border: 1px solid transparent;
+  }
 }

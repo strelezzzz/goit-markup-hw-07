@@ -6,8 +6,8 @@
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 94px;
-}
 
-.filters-list__item:not(:last-child) {
-  margin-right: 8px;
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
