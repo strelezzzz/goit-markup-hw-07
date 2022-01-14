@@ -1,4 +1,14 @@
 /* ======== Navigation ========================== */
+.nav-list,
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  margin-left: 93px;
+}
+
 .nav-list__link {
   color: var(--main-color);
   font-weight: 500;
@@ -44,14 +54,4 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.nav-list {
-  margin-left: 93px;
-}
-
-.nav-list,
-.nav {
-  display: flex;
-  align-items: center;
 }
