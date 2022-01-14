@@ -1,0 +1,13 @@
+/* ========== Studio Filters ======================= */
+
+.filters-list {
+  display: flex;
+  background-color: var(--background);
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+
+.filters-list__item:not(:last-child) {
+  margin-right: 8px;
+}

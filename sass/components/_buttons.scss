@@ -18,27 +18,33 @@
   border-color: transparent;
 }
 
+.buttons--hero,
+.email-button,
+.modal-button {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: bold;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--background);
+  background-color: var(--color-active);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  align-items: center;
+  text-align: center;
+  min-width: 200px;
+}
+
 .buttons--hero {
   margin-bottom: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 32px;
   padding-left: 32px;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  background-color: var(--color-active);
-  font-weight: bold;
-  line-height: 1.87;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  min-width: 200px;
-  color: var(--background);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .buttons:hover,
@@ -54,30 +60,18 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email-button {
+.email-button,
+.modal-button {
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  min-width: 200px;
+
   min-height: 50px;
   padding: 0;
   border: none;
 
   cursor: pointer;
 
-  font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--background);
-  background-color: var(--color-active);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email-button__label {
@@ -96,4 +90,10 @@
 .modal-button:focus {
   background-color: var(--hero-active-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
