@@ -1,0 +1,42 @@
+/* ============== clients =========== */
+.clients-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.clients-list__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--social-color);
+
+  transition-property: fill border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list__link:hover,
+.clients-list__link:focus {
+  fill: var(--color-active);
+  border: 1px solid var(--color-active);
+}
+
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.clients__title {
+  padding-bottom: 50px;
+  padding-top: 94px;
+}
